@@ -6,13 +6,15 @@ package oss.process.scrum.managed.bean;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.annotation.ManagedBean;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped;
 
 /**
  *
  * @author gpuliyar
  */
-@ManagedBean(value = "OrganizationMB")
+@ManagedBean
+@RequestScoped
 public class OrganizationManagedBean {
 
     public List<Organization> organizations;
